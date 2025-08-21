@@ -4,11 +4,17 @@
     box-sizing: border-box;
 }
 
+@font-face {
+    font-family: 'LaLuxes';
+    src: url(../assets/LaLuxes.otf) format('opentype');
+}
+
 body {
     color: white;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: 'LaLuxes';
     /* background-color: #967059; */
-    background-image: url(../assets/bk_image.jpg);
+    background-image: url(../assets/profile_picture@2x.png);
+    background-size: cover;
     display: grid;
     grid-template-rows: auto 1fr auto;
     min-height: 100vh;
@@ -33,6 +39,10 @@ footer {
     grid-row: 3;
 }
 
+footer p {
+    font-size: 11px;
+}
+
 /* html, body {
     position: relative;
 } */
@@ -50,11 +60,17 @@ footer {
     align-items: center;
     justify-content: center;
     gap: 1rem;
+    /* margin-right: 400px; */
 }
 
 .hero-section h1 {
     font-size: 4rem;
+    margin-top: 3rem;
     margin-bottom: 1rem;
+}
+
+.hero-section p {
+    text-align: center;
 }
 
 .picture-here {
@@ -69,6 +85,33 @@ footer {
     bottom: 0;
 } */
 
-<button style="background-color: blue; color: white; padding: 10px; border-radius: 5px;">
-  Styled Button
-</button>
+.contact {
+    font-size: 1rem;
+    margin-top: 1rem;
+    border: none;
+    background-color: rgb(165, 42, 42);
+    color: white;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.resume {
+    font-size: 1rem;
+    margin-top: 1rem;
+    border: none;
+    background-color: rgb(165, 42, 42);
+    color: white;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.resume:hover {
+    cursor: pointer;
+    background-color: #531515;
+}
+
+.contact:hover {
+    cursor: pointer;
+    background-color: #531515;
+}
+
